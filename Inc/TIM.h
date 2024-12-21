@@ -1,13 +1,17 @@
-/*
- * TIM.h
- *
- *  Created on: Dec 20, 2024
- *      Author: zalma
- */
+#ifndef TIM_H
+#define TIM_H
 
-#ifndef TIM_H_
-#define TIM_H_
+#include "stm32f4xx.h"
 
+#define IR_GPIO_PORT 		GPIOA
+#define IR_GPIO_PIN  		GPIO_PIN_8
+#define IR_GPIO_AF   		GPIO_AF1_TIM1
+#define IR_TIMER     		TIM1
+#define IR_TIMER_CHANNEL 	TIM_CHANNEL_1
 
+void TIM_Init(void);
+void GPIO_Init(void);
+void IR_StartSignal(void);
+void IR_StopSignal(void);
 
-#endif /* TIM_H_ */
+#endif
