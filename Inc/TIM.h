@@ -5,7 +5,6 @@
 
 #define IR_GPIO_PORT 		GPIOA
 #define IR_GPIO_PIN  		GPIO_PIN_8
-#define IR_GPIO_AF   		GPIO_AF1_TIM1
 #define IR_TIMER     		TIM1
 #define IR_TIMER_CHANNEL 	TIM_CHANNEL_1
 

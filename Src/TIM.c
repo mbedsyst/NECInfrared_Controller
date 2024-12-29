@@ -3,14 +3,14 @@
 void GPIO_Init(void)
 {
     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
-    IR_GPIO_PORT->MODER &= ~(GPIO_MODER_MODER8);
-    IR_GPIO_PORT->MODER |= (2U << GPIO_MODER_MODER8_Pos);
-    IR_GPIO_PORT->OTYPER &= ~(GPIO_OTYPER_OT_8);
-    IR_GPIO_PORT->OSPEEDR |= (3U << GPIO_OSPEEDER_OSPEEDR8_Pos);
-    IR_GPIO_PORT->PUPDR &= ~(GPIO_PUPDR_PUPDR8);
-    IR_GPIO_PORT->PUPDR |= (1U << GPIO_PUPDR_PUPDR8_Pos);
-    IR_GPIO_PORT->AFR[1] &= ~(0xF << ((8 - 8) * 4));
-    IR_GPIO_PORT->AFR[1] |= (IR_GPIO_AF << ((8 - 8) * 4));
+    IR_GPIO_PORT->MODER &= ~(0x3<<16);
+    IR_GPIO_PORT->MODER |= (2U<<16);
+    IR_GPIO_PORT->OTYPER &= ~(1<<8);
+    IR_GPIO_PORT->OSPEEDR |= (3U << 16);
+    IR_GPIO_PORT->PUPDR &= ~(3U<<16);
+    IR_GPIO_PORT->PUPDR |= (1U << 16);
+    IR_GPIO_PORT->AFR[1] &= ~(0xF<<0);
+    IR_GPIO_PORT->AFR[1] |= (1<<0);
 }
 
 void TIM_Init(void)

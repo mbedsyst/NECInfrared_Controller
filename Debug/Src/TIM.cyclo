@@ -1,0 +1,4 @@
+../Src/TIM.c:3:6:GPIO_Init	1
+../Src/TIM.c:16:6:TIM_Init	1
+../Src/TIM.c:34:6:IR_StartSignal	1
+../Src/TIM.c:40:6:IR_StopSignal	1

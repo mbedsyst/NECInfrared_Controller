@@ -1,0 +1,5 @@
+../Src/NEC.c:5:13:delay_us	24	static
+../Src/NEC.c:13:13:transmit_mark	16	static
+../Src/NEC.c:21:13:transmit_space	16	static
+../Src/NEC.c:28:6:NEC_Init	4	static
+../Src/NEC.c:40:6:NEC_SendCommand	32	static
