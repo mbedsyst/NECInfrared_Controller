@@ -1,4 +1,4 @@
-Src/main.o: ../Src/main.c ../Inc/NEC.h ../Inc/TIM.h \
+Src/main.o: ../Src/main.c \
  ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h \
  ..//Headers/CMSIS/Include/core_cm4.h \
@@ -6,10 +6,7 @@ Src/main.o: ../Src/main.c ../Inc/NEC.h ../Inc/TIM.h \
  ..//Headers/CMSIS/Include/cmsis_compiler.h \
  ..//Headers/CMSIS/Include/cmsis_gcc.h \
  ..//Headers/CMSIS/Include/mpu_armv7.h \
- ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
- ../Inc/SYSTICK.h
-../Inc/NEC.h:
-../Inc/TIM.h:
+ ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h:
 ..//Headers/CMSIS/Include/core_cm4.h:
@@ -18,4 +15,3 @@ Src/main.o: ../Src/main.c ../Inc/NEC.h ../Inc/TIM.h \
 ..//Headers/CMSIS/Include/cmsis_gcc.h:
 ..//Headers/CMSIS/Include/mpu_armv7.h:
 ..//Headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
-../Inc/SYSTICK.h:
