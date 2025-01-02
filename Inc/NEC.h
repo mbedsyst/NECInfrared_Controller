@@ -3,7 +3,7 @@
 
 #include "TIM.h"
 
-// NEC Protocol Timing definitions in microseconds
+
 #define NEC_HEADER_MARK    9000 // 9ms leader mark
 #define NEC_HEADER_SPACE   4500 // 4.5ms leader space
 #define NEC_BIT_MARK       560  // 560us for a bit mark

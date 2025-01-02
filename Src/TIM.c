@@ -15,6 +15,7 @@ void GPIO_Init(void)
 
 void TIM_Init(void)
 {
+	GPIO_Init();
     RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
     // Timer configuration for 38 kHz PWM
     IR_TIMER->PSC = (76 - 1); 						// Prescaler to divide 76 MHz to 1 MHz

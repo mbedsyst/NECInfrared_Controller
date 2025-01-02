@@ -34,6 +34,8 @@ void NEC_Init(void)
     }
     DWT->CYCCNT = 0;           				// Reset the cycle counter
     DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk; 	// Enable the counter
+
+    TIM_Init();
 }
 
 // Transmit NEC signal

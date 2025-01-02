@@ -1,4 +1,4 @@
 ../Src/TIM.c:3:6:GPIO_Init	4	static
-../Src/TIM.c:16:6:TIM_Init	4	static
-../Src/TIM.c:34:6:IR_StartSignal	4	static
-../Src/TIM.c:40:6:IR_StopSignal	4	static
+../Src/TIM.c:16:6:TIM_Init	8	static
+../Src/TIM.c:35:6:IR_StartSignal	4	static
+../Src/TIM.c:41:6:IR_StopSignal	4	static
